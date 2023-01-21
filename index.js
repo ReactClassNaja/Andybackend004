@@ -16,12 +16,19 @@ app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '12jack@@',
-    database: 'vite',
-    port: '3308'
+// const connection = mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     password: '12jack@@',
+//     database: 'vite',
+//     port: '3308'
+//   })
+
+  const connection = mysql.createConnection({
+    host: 'mydb.cu6unrorcuye.us-east-1.rds.amazonaws.com',
+    user: 'admin',
+    password: '1234jack',
+    database: 'vites',
   })
 
 connection.connect()

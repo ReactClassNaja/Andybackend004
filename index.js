@@ -7,7 +7,7 @@ const app = express()
 const port = 3000
 
 app.use(cors({
-    origin: "https://andyfrontend003.vercel.app/",
+    origin: "https://andyfrontend003.vercel.app",
     credentials: true,
     allowedHeaders: ["Content-Type"]
 }))

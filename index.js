@@ -7,8 +7,9 @@ const app = express()
 const port = 3000
 
 app.use(cors({
-    origin: "http://localhost:5173",
-    credentials: true
+    origin: "https://andyfrontend003.vercel.app/",
+    credentials: true,
+    allowedHeaders: ["Content-Type"]
 }))
 
 app.use(cookieParser())
